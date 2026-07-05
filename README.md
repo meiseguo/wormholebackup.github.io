@@ -1,2 +1,1 @@
-# wormholebackup.github.io
-Wormhole Backup
+# Wormhole Backup
