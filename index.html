@@ -1,11 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>虫洞备份 - 技术支持</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虫洞备份 Wormhole Backup · 技术支持 & 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f8f9fb;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+            color: #1c1c1e;
+            padding: 32px 20px 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 860px;
+            width: 100%;
+            background: #fff;
+            border-radius: 28px;
+            box-shadow: 0 2px 24px rgba(0,0,0,.04), 0 1px 4px rgba(0,0,0,.03);
+            padding: 40px 38px 44px;
+            border: 1px solid #f0f2f5;
+        }
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 34px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .app-icon {
+            width: 62px; height: 62px;
+            background: linear-gradient(135deg, #5ac8fa, #007aff);
+            border-radius: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(0,122,255,.25);
+            flex-shrink: 0;
+        }
+        .app-name { font-size: 1.5rem; font-weight: 720; color: #000; line-height: 1.2; letter-spacing: -.3px; }
+        .app-sub { font-size: .9rem; color: #6c6c70; margin-top: 3px; }
+
+        .section { margin-bottom: 30px; }
+        .section:last-of-type { margin-bottom: 0; }
+        .section-title {
+            font-size: 1.13rem; font-weight: 660; color: #1c1c1e;
+            margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
+        }
+        .badge {
+            font-size: .67rem; font-weight: 510;
+            background: #e8ecf0; color: #3a3a3c;
+            padding: 2px 11px; border-radius: 40px;
+        }
+        .section-content { font-size: .96rem; line-height: 1.63; color: #3a3a3c; }
+        .section-content p { margin-bottom: 10px; }
+        .contact-list { list-style: none; margin: 6px 0 0; }
+        .contact-list li {
+            padding: 9px 0; display: flex; align-items: center; gap: 12px;
+            border-bottom: 1px solid #f0f2f5;
+        }
+        .contact-list li:last-child { border-bottom: none; }
+        .cl { font-weight: 570; min-width: 74px; color: #1c1c1e; }
+        .cv a { color: #007aff; text-decoration: none; }
+        .cv a:hover { text-decoration: underline; }
+
+        .policy-embed { margin-top: 8px; border: 1px solid #e9ecef; border-radius: 16px; overflow: hidden; background: #fff; }
+        .tabs { display: flex; background: #f8f9fb; border-bottom: 1px solid #e9ecef; }
+        .tab {
+            flex: 1; text-align: center; padding: 12px 10px;
+            font-size: .87rem; font-weight: 540; color: #6c6c70;
+            cursor: pointer; border-bottom: 2px solid transparent;
+            transition: all .2s; user-select: none;
+        }
+        .tab.active { color: #007aff; border-bottom-color: #007aff; background: #fff; }
+        .panel { display: none; }
+        .panel.active { display: block; }
+        .panel iframe { width: 100%; height: 450px; border: none; display: block; background: #fff; }
+
+        .footer-meta {
+            margin-top: 36px; padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            font-size: .85rem; color: #8e8e93; text-align: center; line-height: 1.7;
+        }
+        .footer-meta strong { color: #3a3a3c; font-weight: 580; }
+
+        @media (max-width: 620px) {
+            .container { padding: 24px 18px 30px; }
+            .app-icon { width: 50px; height: 50px; font-size: 19px; border-radius: 14px; }
+            .app-name { font-size: 1.25rem; }
+            .panel iframe { height: 375px; }
+        }
+        @media (max-width: 430px) { .panel iframe { height: 320px; } }
+    </style>
 </head>
 <body>
-<h2>技术支持：</h2>
-<p><a href="mailTo:meiseguo@iCloud.com">邮箱：meiseguo@iCloud.com</a></p>
+<div class="container">
+
+    <!-- App Header -->
+    <div class="app-header">
+        <div class="app-icon">🪐</div>
+        <div>
+            <div class="app-name">虫洞备份 Wormhole Backup</div>
+            <div class="app-sub">技术支持 · 隐私政策</div>
+        </div>
+    </div>
+
+    <!-- 技术支持 -->
+    <div class="section">
+        <div class="section-title">
+            📞 技术支持 / Technical Support
+            <span class="badge">Apple 审核必备</span>
+        </div>
+        <div class="section-content">
+            <p>如遇任何问题或需要帮助，请发送邮件至下方邮箱，我们将尽快回复。</p>
+            <ul class="contact-list">
+                <li>
+                    <span class="cl">📧 邮箱</span>
+                    <span class="cv"><a href="mailto:meiseguo@icloud.com">meiseguo@icloud.com</a></span>
+                </li>
+                <li>
+                    <span class="cl">📍 地址</span>
+                    <span class="cv" style="color:#3a3a3c;">中国 · 广东 · 珠海</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 隐私政策 -->
+    <div class="section">
+        <div class="section-title">
+            🔒 隐私政策 / Privacy Policy
+            <span class="badge">双语</span>
+        </div>
+        <p style="font-size:.89rem;color:#6c6c70;margin-bottom:10px;">点击标签切换中 / 英文版本</p>
+        <div class="policy-embed">
+            <div class="tabs" role="tablist">
+                <div class="tab active" data-lang="zh" role="tab" aria-selected="true" tabindex="0">中文 · ZH</div>
+                <div class="tab" data-lang="en" role="tab" aria-selected="false" tabindex="0">English · EN</div>
+            </div>
+            <div class="panel active" id="p-zh"><iframe src="privacy-zh.html" title="中文隐私政策" loading="lazy" sandbox="allow-same-origin allow-scripts" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+            <div class="panel" id="p-en"><iframe src="privacy-en.html" title="English Privacy Policy" loading="lazy" sandbox="allow-same-origin allow-scripts" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+        </div>
+    </div>
+
+    <div class="footer-meta">
+        <strong>虫洞备份 Wormhole Backup</strong> · 版本 7.5<br>
+        支持 iOS 16.0+ · 开发者：@meiseguo<br>
+        © 2026 All Rights Reserved.
+    </div>
+</div>
+
+<script>
+(function(){
+    const tabs = document.querySelectorAll('.tab');
+    const zh = document.getElementById('p-zh'), en = document.getElementById('p-en');
+    tabs.forEach(t=>{
+        t.addEventListener('click',()=>{
+            tabs.forEach(x=>{ x.classList.remove('active'); x.setAttribute('aria-selected','false'); });
+            t.classList.add('active'); t.setAttribute('aria-selected','true');
+            zh.classList.toggle('active', t.dataset.lang==='zh');
+            en.classList.toggle('active', t.dataset.lang==='en');
+        });
+    });
+    const p=new URLSearchParams(location.search).get('lang');
+    if(p==='en') tabs[1].click();
+})();
+</script>
 </body>
 </html>
